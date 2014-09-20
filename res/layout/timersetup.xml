@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center" >
+
+        <com.beryleo.time.fonttextview
+            android:id="@+id/timernametextview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/timername" 
+            android:textColor="@android:color/white"/>
+
+        <EditText
+            android:id="@+id/timernameedittext"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/white_button"
+            android:ems="10"
+            android:hint="@string/timername"
+            android:textColor="@android:color/white" >
+
+        </EditText>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center" >
+
+        <TimePicker
+            android:id="@+id/timertimepicker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TimePicker
+            android:id="@+id/timersecondtimepicker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center" >
+
+        <com.beryleo.time.fontbutton
+            android:id="@+id/finishtimerbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/whitebutton"
+            android:text="@string/finish"
+            android:textColor="@android:color/white" />
+
+        <com.beryleo.time.fontbutton
+            android:id="@+id/canceltimerbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/whitebutton"
+            android:text="@string/cancel"
+            android:textColor="@android:color/white" />
+
+        <com.beryleo.time.fontbutton
+            android:id="@+id/addpresettimerbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/whitebutton"
+            android:text="@string/addtopresettimer"
+            android:textColor="@android:color/white" />
+
+    </LinearLayout>
+
+</LinearLayout>

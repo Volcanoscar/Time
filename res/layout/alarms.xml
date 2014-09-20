@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center"
+    android:orientation="vertical" >
+    
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <com.beryleo.time.fonttextview
+            android:id="@+id/alarmcounttextview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"/>
+
+        <com.beryleo.time.fontbutton
+            android:id="@+id/addalarmbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/addalarm"
+            android:background="@drawable/whitebutton"
+            android:textColor="@android:color/white"/>
+
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center" >
+
+   	 	<ListView
+            android:id="@+id/alarmslistview"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+        </ListView>
+     </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center" >
+
+        <com.beryleo.time.fonttextview
+            android:id="@+id/mondaytextview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/monday" 
+            android:textColor="@android:color/white"/>
+
+        <com.beryleo.time.fonttogglebutton
+            android:id="@+id/mondaytogglebutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/whitebutton"
+            android:textColor="@android:color/white"/>
+
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center" >
+
+        <com.beryleo.time.fonttextview
+            android:id="@+id/tuesdaytextview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tuesday" 
+            android:textColor="@android:color/white"/>
+
+        <com.beryleo.time.fonttogglebutton
+            android:id="@+id/tuesdaytogglebutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/whitebutton"
+            android:textColor="@android:color/white"/>
+
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center" >
+
+        <com.beryleo.time.fonttextview
+            android:id="@+id/wednesdaytextview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/wednesday" 
+            android:textColor="@android:color/white"/>
+
+        <com.beryleo.time.fonttogglebutton
+            android:id="@+id/wednesdaytogglebutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/whitebutton"
+            android:textColor="@android:color/white"/>
+
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center" >
+
+        <com.beryleo.time.fonttextview
+            android:id="@+id/thursdaytextview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/thursday"
+            android:textColor="@android:color/white" />
+
+        <com.beryleo.time.fonttogglebutton
+            android:id="@+id/thursdaytogglebutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/whitebutton"
+            android:textColor="@android:color/white"/>
+
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center" >
+
+        <com.beryleo.time.fonttextview
+            android:id="@+id/fridaytextview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/friday"
+            android:textColor="@android:color/white" />
+
+        <com.beryleo.time.fonttogglebutton
+            android:id="@+id/fridaytogglebutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/whitebutton"
+            android:textColor="@android:color/white"/>
+
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center" >
+
+        <com.beryleo.time.fonttextview
+            android:id="@+id/saturdaytextview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/saturday"
+android:textColor="@android:color/white"/>
+
+        <com.beryleo.time.fonttogglebutton
+            android:id="@+id/saturdaytogglebutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/whitebutton"
+            android:textColor="@android:color/white"/>
+
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center" >
+
+        <com.beryleo.time.fonttextview
+            android:id="@+id/sundaytextview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sunday"
+            android:textColor="@android:color/white" />
+
+        <com.beryleo.time.fonttogglebutton
+            android:id="@+id/sundaytogglebutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/whitebutton"
+            android:textColor="@android:color/white"/>
+
+    </LinearLayout>
+    
+
+</LinearLayout>

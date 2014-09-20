@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.beryleo.time"
+    android:installLocation="auto"
+    android:versionCode="69"
+    android:versionName="1.1" >
+    <uses-sdk android:minSdkVersion="7" android:targetSdkVersion="19"/>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <application
+        android:allowBackup="false"
+        android:icon="@drawable/timeicon"
+        android:label="@string/app_name" >
+        <activity
+            android:name="com.beryleo.time.timeactivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTask">            
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.beryleo.time.closer"
+            android:label="@string/app_name"
+             >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.beryleo.time.alarmp.alarmalert"
+            android:label="@string/app_name"
+             />
+        <receiver android:name="com.beryleo.time.alarmp.bootservice" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.beryleo.time.alarmp.schedulealarmservice" >
+        </receiver>
+        <receiver android:name="com.beryleo.time.widget" android:label="@string/app_name_circle">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/widget" />
+        </receiver>
+        <receiver android:name="com.beryleo.time.widgetsquare" android:label="@string/app_name_square">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/widgetsquare" />
+        </receiver>
+        <receiver android:name="com.beryleo.time.widgetroundedsquare" android:label="@string/app_name_roundedsquare">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/widgetroundedsquare" />
+        </receiver>
+        <receiver android:name="com.beryleo.time.widgetintersections" android:label="@string/app_name_intersections">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/widgetintersections" />
+        </receiver>
+        <activity
+            android:name="com.beryleo.time.timerp.setuptimeractivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.beryleo.time.timerp.preseteditoractivity"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        <receiver android:name="com.beryleo.time.timerp.timeralarm" android:process=":remote" />
+        <receiver android:name="com.beryleo.time.alarmp.alarmalarm" android:process=":remote" />
+        <receiver android:name="com.beryleo.time.alarmp.alarmalarmstarter" android:process=":remote" />
+        <activity
+            android:name="com.beryleo.time.alarmp.alarmeditoractivity"
+             android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.beryleo.time.alarmp.ringtoneeditoractivity"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.beryleo.time.stopwatchp.standoutstopwatchactivity"
+            android:label="Stopwatch" 
+            android:excludeFromRecents="true"
+            android:theme="@android:style/Theme.NoDisplay" 
+            android:launchMode="singleTask">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        <service android:name="com.beryleo.time.stopwatchp.multiwindow" >
+        </service>
+        <service android:name="com.beryleo.time.stopwatchp.standoutstopwatch"></service>
+        <service android:name="com.beryleo.time.alarmp.schedulerservice"></service>
+        <provider android:name="com.beryleo.time.alarmp.alarmprovider"
+             android:authorities="com.beryleo.time.alarmp.alarmprovider" 
+             android:exported="false"/>
+    </application>
+</manifest>

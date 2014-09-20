@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center"
+    android:orientation="vertical" >
+    
+
+        <com.beryleo.time.fonttextview
+            android:id="@+id/versiontextview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/version"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@android:color/white" />
+
+    <com.beryleo.time.fonttextview
+        android:id="@+id/madebytextview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/madeby"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@android:color/white" />
+
+    <com.beryleo.time.fonttextview
+        android:id="@+id/contacttextview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:autoLink="email|web"
+        android:text="@string/contact"
+        
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@android:color/white" />
+
+    <com.beryleo.time.fonttextview
+        android:id="@+id/popupcredittextview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/popupcredit"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@android:color/white" />
+
+    <com.beryleo.time.fonttextview
+        android:id="@+id/popupcreditcontacttextview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:autoLink="email|web"
+        android:text="@string/popupcreditcontact"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@android:color/white" />
+    
+    <com.beryleo.time.fonttextview
+        android:id="@+id/analogclocksecondstextview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:autoLink="email|web"
+        android:text="@string/analogclockseconds"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@android:color/white" />
+
+</LinearLayout>

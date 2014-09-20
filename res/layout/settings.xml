@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center"
+    android:orientation="vertical" >
+    
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center|center_vertical" >
+
+        <com.beryleo.time.fonttextview
+            android:id="@+id/decimalplacestextview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/decimalplaces"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@android:color/white" />
+
+        <com.beryleo.time.fontbutton
+            android:id="@+id/lessdecimalplacesbutton"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/minus"
+            android:background="@drawable/whitebutton"
+            android:textColor="@android:color/white"/>
+
+        <com.beryleo.time.fonttextview
+            android:id="@+id/numberdecimalplacesvaluetextview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge" 
+            android:textColor="@android:color/white"/>
+
+        <com.beryleo.time.fontbutton
+            android:id="@+id/moredecimalplacesbutton"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/plus"
+            android:background="@drawable/whitebutton"
+            android:textColor="@android:color/white"/>
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center|center_vertical" >
+
+        <com.beryleo.time.fonttextview
+            android:id="@+id/topnavigationtextview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/topnavigation"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@android:color/white" />
+
+        <com.beryleo.time.fonttogglebutton
+            android:id="@+id/topnavigationtogglebutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/whitebutton"
+            android:textColor="@android:color/white"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center|center_vertical" >
+
+        <com.beryleo.time.fonttextview
+            android:id="@+id/bottomclocktextview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/displayclock"
+            android:textAppearance="?android:attr/textAppearanceSmall" 
+            android:textColor="@android:color/white"/>
+
+        <com.beryleo.time.fonttogglebutton
+            android:id="@+id/bottomclocktogglebutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/whitebutton"
+            android:textColor="@android:color/white"/>
+    </LinearLayout>
+    
+     <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center|center_vertical" >
+
+        <com.beryleo.time.fonttextview
+            android:id="@+id/popupstopwatchtextview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/popupstopwatch"
+            android:textAppearance="?android:attr/textAppearanceSmall" 
+            android:textColor="@android:color/white"/>
+
+        <com.beryleo.time.fonttogglebutton
+            android:id="@+id/popupstopwatchtogglebutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/whitebutton"
+            android:textColor="@android:color/white"/>
+    </LinearLayout>
+    
+     <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center|center_vertical" >
+
+        <com.beryleo.time.fonttextview
+            android:id="@+id/newfonttextview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/newfont"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@android:color/white" />
+
+        <com.beryleo.time.fonttogglebutton
+            android:id="@+id/newfonttogglebutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/whitebutton"
+            android:textColor="@android:color/white"/>
+    </LinearLayout>
+    
+     <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center|center_vertical" >
+
+        <com.beryleo.time.fonttextview
+            android:id="@+id/startscreentextview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/startsceen"
+            android:textAppearance="?android:attr/textAppearanceSmall" 
+            android:textColor="@android:color/white"/>
+
+        <com.beryleo.time.fontbutton
+            android:id="@+id/lowerstartscreenbutton"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/minus"
+            android:background="@drawable/whitebutton"
+            android:textColor="@android:color/white"/>
+
+        <com.beryleo.time.fonttextview
+            android:id="@+id/startscreenvaluetextview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@android:color/white" />
+
+        <com.beryleo.time.fontbutton
+            android:id="@+id/higherstartscreenbutton"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/plus"
+            android:background="@drawable/whitebutton"
+            android:textColor="@android:color/white"/>
+    </LinearLayout>
+    
+     <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center|center_vertical" >
+
+        <com.beryleo.time.fonttextview
+            android:id="@+id/clocktypetextview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/clocktype"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@android:color/white" />
+
+        <com.beryleo.time.fontbutton
+            android:id="@+id/lowerclocktypebutton"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/whitebutton"
+            android:text="@string/minus"
+            android:textColor="@android:color/white" />
+
+        <com.beryleo.time.fonttextview
+            android:id="@+id/clocktypevaluetextview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@android:color/white" />
+
+        <com.beryleo.time.fontbutton
+            android:id="@+id/higherclocktypebutton"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/whitebutton"
+            android:text="@string/plus"
+            android:textColor="@android:color/white" />
+
+    </LinearLayout>
+    
+     <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center|center_vertical" >
+
+        <com.beryleo.time.fonttextview
+            android:id="@+id/clocksecondhandtextview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/displayseconds"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@android:color/white" />
+
+        <com.beryleo.time.fonttogglebutton
+            android:id="@+id/clocksecondhandtogglebutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/whitebutton"
+            android:textColor="@android:color/white"/>
+
+    </LinearLayout>
+     
+
+</LinearLayout>

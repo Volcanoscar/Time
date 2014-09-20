@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <com.beryleo.time.fonttextview
+        android:id="@+id/alarmalarmtextview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/alarmdone"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@android:color/white" />
+
+    <com.beryleo.time.fonttextview
+        android:id="@+id/alarmalarmnametextview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <com.beryleo.time.fontbutton
+        android:id="@+id/alarmdismissbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/close"
+        android:background="@drawable/whitebutton"
+            android:textColor="@android:color/white" 
+            android:textAppearance="?android:attr/textAppearanceLarge"/>
+
+</LinearLayout>
